@@ -5,11 +5,11 @@ public class Calculator {
 	private int result;
 	
 	//constructor
-	public Calculator()
-	{
-		result=0;
-		System.out.println("welcome to Calculator class");
-	}
+			public Calculator()
+			{
+				result=0;
+				System.out.println("welcome to Calculator class");
+			}
 	
 	public void calcSum(int a,int b)
 	{
