@@ -1,6 +1,7 @@
 package com.sharayu.programs;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import com.praffull.classes.Mobile;
 
@@ -17,8 +18,21 @@ public class ArrayListObjects {
 		
 		//System.out.println(mobileList);
 		
+		/*
 		for(int i=0;i<mobileList.size();i++)
 			System.out.println(mobileList.get(i).getModelName());
+		*/
+		
+		Mobile obj;
+		
+		Iterator<Mobile> iterator=mobileList.iterator();
+		while(iterator.hasNext())
+		{
+			//System.out.println(iterator.next().getModelName());
+			//System.out.println(iterator.next().getPrice());
+			obj=iterator.next();
+			System.out.println(obj.getModelName()+" | "+obj.getPrice());
+		}
 		
 		
 	}

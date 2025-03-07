@@ -27,6 +27,11 @@ public class Mobile {
 	public String getModelName() {
 		return modelName;
 	}
+
+	public float getPrice() {
+		return price;
+	}
+	
 	
 	
 	

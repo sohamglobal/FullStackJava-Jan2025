@@ -5,6 +5,7 @@ import java.util.*;
 public class ArrayListBasic {
 	public static void main(String[] args) {
 		ArrayList<String> names=new ArrayList<>();
+		System.out.println(names.isEmpty());
 		names.add("java");
 		names.add("spring");
 		names.add("praffull");
@@ -14,8 +15,10 @@ public class ArrayListBasic {
 		names.add(null);
 		names.add(2, "data jpa");
 		names.remove(6);
+		names.set(6, "spark");
 		System.out.println(names);
 		System.out.println(names.size());
+		names.clear();
 		
 		ArrayList<Integer> nums=new ArrayList<>();
 		nums.add(9);
