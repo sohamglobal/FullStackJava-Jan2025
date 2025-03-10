@@ -17,6 +17,8 @@ public class ArrayListBasic {
 		names.remove(6);
 		names.set(6, "spark");
 		System.out.println(names);
+		Collections.sort(names);
+		System.out.println(names);
 		System.out.println(names.size());
 		names.clear();
 		
