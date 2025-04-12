@@ -9,7 +9,7 @@ public class SearchOnAccountNumber {
 		System.out.print("Enter account number : ");
 		ano=sc.nextInt();
 		
-		//------------
+		//------------ JDBC
 		
 		Connection con;
 		PreparedStatement pst;
@@ -23,7 +23,7 @@ public class SearchOnAccountNumber {
 			pst.setInt(1, ano);
 			rs=pst.executeQuery();
 			if(rs.next())
-				System.out.println(rs.getString("accnm"));
+				System.out.println("Account name is "+rs.getString("accnm"));
 			else
 				System.out.println("not found");
 			
