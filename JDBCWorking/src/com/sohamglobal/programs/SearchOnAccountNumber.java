@@ -23,7 +23,10 @@ public class SearchOnAccountNumber {
 			pst.setInt(1, ano);
 			rs=pst.executeQuery();
 			if(rs.next())
+			{
 				System.out.println("Account name is "+rs.getString("accnm"));
+				System.out.println("Balance is "+rs.getFloat("balance"));
+			}
 			else
 				System.out.println("not found");
 			
