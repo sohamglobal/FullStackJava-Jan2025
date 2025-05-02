@@ -13,6 +13,7 @@
 <%
 String cho=request.getParameter("choice");
 Cookie c1=new Cookie("entchoice",cho);
+c1.setMaxAge(30);
 response.addCookie(c1);
 %>
 
