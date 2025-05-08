@@ -2,10 +2,12 @@ package com.sohamglobal.services;
 import java.sql.*;
 
 public class Authenticator {
+	//properties
 	private String userId;
 	private String password;
 	private String authStatus;
 	
+	//constructor
 	public Authenticator()
 	{
 		userId="";
