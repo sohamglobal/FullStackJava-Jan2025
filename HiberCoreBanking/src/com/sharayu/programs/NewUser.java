@@ -34,6 +34,7 @@ public class NewUser {
 		ses.getTransaction().commit();
 		System.out.println("new user created successfully");
 		ses.close();
+		sc.close();
 	}
 
 }
