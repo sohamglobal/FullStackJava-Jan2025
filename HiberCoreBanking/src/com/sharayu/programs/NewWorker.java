@@ -9,11 +9,11 @@ import com.sohamglobal.entities.Worker;
 public class NewWorker {
 	public static void main(String[] args) {
 		Worker w=new Worker();
-		w.setName("charles leclerc"); 
-		w.setDept("marketing"); 
-		w.setPost("executive");
-		w.setLocation("monaco"); 
-		w.setSalary(16000);
+		w.setName("shailaja"); 
+		w.setDept("admin"); 
+		w.setPost("auditor");
+		w.setLocation("dubai"); 
+		w.setSalary(35000);
 		 
 		Configuration cfg=new Configuration().configure();
 		SessionFactory sf=cfg.addAnnotatedClass(Worker.class).buildSessionFactory();
