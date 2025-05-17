@@ -19,6 +19,7 @@ public class NewAccount {
 		Session ses=sf.getCurrentSession();
 		ses.beginTransaction();
 		
+		// insert into accounts values(?,?,?,?);
 		ses.persist(obj);
 		ses.getTransaction().commit();
 		System.out.println("New Account Created");
