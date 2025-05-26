@@ -1,0 +1,341 @@
+use shoppingdb;
+db.createCollection("users");
+
+db.users.insertOne({
+  "userid": "user001",
+  "password": "pass123",
+  "name": "Amit Sharma",
+  "city": "Delhi",
+  "age": 28,
+  "gender": "Male",
+  "hobbies": ["reading", "traveling"]
+});
+
+db.users.insertOne({
+  "userid": "user002",
+  "password": "secure456",
+  "name": "Priya Verma",
+  "city": "Mumbai",
+  "age": 24,
+  "gender": "Female",
+  "hobbies": ["music", "painting"]
+});
+
+db.users.insertOne({
+  "userid": "user003",
+  "password": "alpha789",
+  "name": "Rahul Mehta",
+  "city": "Pune",
+  "age": 30,
+  "gender": "Male",
+  "hobbies": ["cycling", "photography"]
+});
+
+db.users.insertOne({
+  "userid": "user004",
+  "password": "beta987",
+  "name": "Anjali Singh",
+  "city": "Hyderabad",
+  "age": 22,
+  "gender": "Female",
+  "hobbies": ["dancing", "yoga"]
+});
+
+db.users.insertOne({
+  "userid": "user005",
+  "password": "gamma654",
+  "name": "Vikram Rao",
+  "city": "Bangalore",
+  "age": 27,
+  "gender": "Male",
+  "hobbies": ["gaming", "coding"]
+});
+
+db.users.insertOne({
+  "userid": "user006",
+  "password": "delta321",
+  "name": "Sneha Patil",
+  "city": "Chennai",
+  "age": 26,
+  "gender": "Female",
+  "hobbies": ["cooking", "gardening"]
+});
+
+db.users.insertOne({
+  "userid": "user007",
+  "password": "epsilon234",
+  "name": "Arjun Kapoor",
+  "city": "Kolkata",
+  "age": 29,
+  "gender": "Male",
+  "hobbies": ["running", "investing"]
+});
+
+db.users.insertOne({
+  "userid": "user008",
+  "password": "zeta567",
+  "name": "Meera Gupta",
+  "city": "Lucknow",
+  "age": 25,
+  "gender": "Female",
+  "hobbies": ["writing", "poetry"]
+});
+
+db.users.insertOne({
+  "userid": "user009",
+  "password": "eta789",
+  "name": "Suresh Nair",
+  "city": "Coimbatore",
+  "age": 32,
+  "gender": "Male",
+  "hobbies": ["swimming", "fishing"]
+});
+
+db.users.insertOne({
+  "userid": "user010",
+  "password": "theta123",
+  "name": "Rajesh Patel",
+  "city": "Ahmedabad",
+  "age": 31,
+  "gender": "Male",
+  "hobbies": ["movies", "theater"]
+});
+
+db.users.insertOne({
+  "userid": "user011",
+  "password": "iota345",
+  "name": "Divya Reddy",
+  "city": "Vijayawada",
+  "age": 23,
+  "gender": "Female",
+  "hobbies": ["art", "crafting"]
+});
+
+db.users.insertOne({
+  "userid": "user012",
+  "password": "kappa678",
+  "name": "Manoj Kumar",
+  "city": "Patna",
+  "age": 33,
+  "gender": "Male",
+  "hobbies": ["history", "chess"]
+});
+
+db.users.insertOne({
+  "userid": "user013",
+  "password": "lambda987",
+  "name": "Ritika Bose",
+  "city": "Guwahati",
+  "age": 27,
+  "gender": "Female",
+  "hobbies": ["singing", "badminton"]
+});
+
+db.users.insertOne({
+  "userid": "user014",
+  "password": "mu543",
+  "name": "Siddharth Jain",
+  "city": "Jaipur",
+  "age": 30,
+  "gender": "Male",
+  "hobbies": ["trekking", "woodworking"]
+});
+
+db.users.insertOne({
+  "userid": "user015",
+  "password": "nu876",
+  "name": "Neha Thakur",
+  "city": "Indore",
+  "age": 28,
+  "gender": "Female",
+  "hobbies": ["acting", "calligraphy"]
+});
+
+db.users.insertOne({
+  "userid": "user016",
+  "password": "xi321",
+  "name": "Abhishek Ghosh",
+  "city": "Bhubaneswar",
+  "age": 35,
+  "gender": "Male",
+  "hobbies": ["bird watching", "gardening"]
+});
+
+db.users.insertOne({
+  "userid": "user017",
+  "password": "omicron654",
+  "name": "Jyoti Das",
+  "city": "Ranchi",
+  "age": 24,
+  "gender": "Female",
+  "hobbies": ["yoga", "traveling"]
+});
+
+db.users.insertOne({
+  "userid": "user018",
+  "password": "pi789",
+  "name": "Suraj Shinde",
+  "city": "Nagpur",
+  "age": 29,
+  "gender": "Male",
+  "hobbies": ["cooking", "music"]
+});
+
+db.users.insertOne({
+  "userid": "user019",
+  "password": "rho567",
+  "name": "Aarti Kulkarni",
+  "city": "Thane",
+  "age": 27,
+  "gender": "Female",
+  "hobbies": ["sketching", "meditation"]
+});
+
+db.users.insertOne({
+  "userid": "user020",
+  "password": "sigma234",
+  "name": "Harish Kumar",
+  "city": "Surat",
+  "age": 31,
+  "gender": "Male",
+  "hobbies": ["writing", "running"]
+});
+
+
+db.users.find({ age: { $eq: 30 } });
+db.users.find({ age: { $ne: 25 } });
+db.users.find({ age: { $gt: 30 } });
+db.users.find({ age: { $gte: 30 } });
+db.users.find({ age: { $lt: 30 } });
+db.users.find({ age: { $lte: 30 } });
+db.users.find({ age: { $in: [25, 30, 35] } });
+db.users.find({ age: { $nin: [25, 30, 35] } });
+
+
+db.users.find({
+    $and: [
+        { gender: "Female" },
+        { city: "Mumbai" }
+    ]
+});
+
+db.users.find({
+    $or: [
+        { gender: "Female" },
+        { city: "Chennai" }
+    ]
+});
+
+db.users.find({
+    gender: { $not: { $eq: "Male" } }
+});
+
+
+db.users.find({
+    $nor: [
+        { gender: "Female" },
+        { city: "San Francisco" }
+    ]
+});
+
+
+db.users.find({
+    $or: [
+        { $and: [{ gender: "Female" }, { city: "Los Angeles" }] },
+        { $and: [{ gender: "Male" }, { city: "New York" }] }
+    ]
+});
+
+
+
+
+db.users.updateOne(
+    { name: "John Doe" },
+    { $set: { email: "john.doe@example.com" } }
+);
+
+
+db.users.updateOne(
+    { name: "Alice Smith" },
+    { $set: { email: "alice.smith@example.com", age: 30 } }
+);
+
+db.users.updateMany(
+    {},
+    { $inc: { age: 1 } }
+);
+
+db.users.updateOne(
+    { name: "John Doe" },
+    { $push: { hobbies: "Cooking" } }
+);
+
+db.users.updateOne(
+    { name: "Alice Smith" },
+    { $push: { hobbies: { $each: ["Painting", "Hiking"] } } }
+);
+
+db.users.updateOne(
+    { name: "John Doe" },
+    { $pull: { hobbies: "Reading" } }
+);
+
+db.users.updateOne(
+    { name: "Alice Smith" },
+    { $set: { "address.city": "Los Angeles", "address.state": "California" } }
+);
+
+db.users.updateMany(
+    {},
+    { $rename: { "gender": "sex" } }
+);
+
+
+db.users.updateOne(
+    { name: "Jane Doe" },
+    { $set: { email: "jane.doe@example.com" } },
+    { upsert: true }
+);
+
+
+db.users.updateMany(
+    { age: { $gt: 30 } },
+    { $set: { age: 40 } }
+);
+
+
+
+db.users.deleteOne({ name: "John Doe" });
+
+db.users.deleteMany({ age: { $gt: 40 } });
+
+db.users.deleteMany({});
+
+db.users.deleteMany({ name: "John Doe", age: { $lt: 25 } });
+
+db.users.deleteMany({ name: "John Doe", age: { $lt: 25 } });
+
+db.users.deleteMany({ email: /@example\.com$/ });
+
+db.users.deleteMany({
+    $or: [
+        { gender: "Female" },
+        { city: "New York" }
+    ]
+});
+
+db.users.updateMany(
+    {},
+    { $unset: { address: "" } }
+);
+
+db.users.updateMany(
+    {},
+    { $pull: { hobbies: "Reading" } }
+);
+
+
+db.users.deleteMany({ gender: { $ne: "Male" } });
+
+db.users.deleteMany({ age: { $gte: 20, $lte: 30 } });
+
