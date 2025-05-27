@@ -1,0 +1,28 @@
+db.createCollection("mobilesales");
+
+db.mobilesales.insertMany([
+  { brand: "Samsung", color: "Black", ram: "8GB", rom: "128GB", screensize: "6.5 inches", price: 24999, rating: 4.5 },
+  { brand: "Apple", color: "White", ram: "6GB", rom: "128GB", screensize: "6.1 inches", price: 69999, rating: 4.8 },
+  { brand: "Xiaomi", color: "Blue", ram: "8GB", rom: "256GB", screensize: "6.67 inches", price: 21999, rating: 4.4 },
+  { brand: "Realme", color: "Silver", ram: "6GB", rom: "128GB", screensize: "6.4 inches", price: 17999, rating: 4.3 },
+  { brand: "OnePlus", color: "Green", ram: "12GB", rom: "256GB", screensize: "6.7 inches", price: 39999, rating: 4.6 },
+  { brand: "Samsung", color: "Blue", ram: "6GB", rom: "128GB", screensize: "6.6 inches", price: 20999, rating: 4.2 },
+  { brand: "Apple", color: "Black", ram: "8GB", rom: "256GB", screensize: "6.1 inches", price: 84999, rating: 4.9 },
+  { brand: "Xiaomi", color: "Red", ram: "4GB", rom: "64GB", screensize: "6.3 inches", price: 12999, rating: 4.1 },
+  { brand: "Realme", color: "Gold", ram: "8GB", rom: "256GB", screensize: "6.5 inches", price: 25999, rating: 4.5 },
+  { brand: "OnePlus", color: "Blue", ram: "6GB", rom: "128GB", screensize: "6.4 inches", price: 32999, rating: 4.4 },
+  { brand: "Samsung", color: "Grey", ram: "4GB", rom: "64GB", screensize: "6.2 inches", price: 13999, rating: 4.0 },
+  { brand: "Apple", color: "Purple", ram: "6GB", rom: "128GB", screensize: "6.1 inches", price: 79999, rating: 4.7 },
+  { brand: "Samsung", color: "Black", ram: "6GB", rom: "128GB", screensize: "6.4 inches", price: 17999, rating: 4.3 },
+  { brand: "Realme", color: "Blue", ram: "4GB", rom: "64GB", screensize: "6.5 inches", price: 14999, rating: 4.1 },
+  { brand: "OnePlus", color: "Green", ram: "8GB", rom: "128GB", screensize: "6.7 inches", price: 36999, rating: 4.5 },
+  { brand: "Samsung", color: "White", ram: "12GB", rom: "512GB", screensize: "6.8 inches", price: 59999, rating: 4.7 },
+  { brand: "Apple", color: "Blue", ram: "6GB", rom: "256GB", screensize: "6.1 inches", price: 72999, rating: 4.8 },
+  { brand: "Xiaomi", color: "Silver", ram: "8GB", rom: "128GB", screensize: "6.6 inches", price: 20999, rating: 4.4 },
+  { brand: "Realme", color: "Black", ram: "6GB", rom: "128GB", screensize: "6.3 inches", price: 18999, rating: 4.2 },
+  { brand: "OnePlus", color: "Red", ram: "12GB", rom: "256GB", screensize: "6.8 inches", price: 42999, rating: 4.6 },
+  { brand: "Samsung", color: "Gold", ram: "8GB", rom: "128GB", screensize: "6.5 inches", price: 25999, rating: 4.5 },
+  { brand: "Apple", color: "Silver", ram: "4GB", rom: "64GB", screensize: "6.1 inches", price: 64999, rating: 4.6 },
+  { brand: "Xiaomi", color: "Blue", ram: "6GB", rom: "128GB", screensize: "6.67 inches", price: 19999, rating: 4.3 },
+  { brand: "Realme", color: "Green", ram: "8GB", rom: "128GB", screensize: "6.4 inches", price: 22999, rating: 4.4 }
+]);
